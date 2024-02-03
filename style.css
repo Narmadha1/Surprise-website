@@ -1,0 +1,121 @@
+body{
+    background-color: rgb(90, 54, 54);
+}
+#h2{
+    color: aliceblue;
+    font-family:'Italianno', cursive;
+   text-align: center;
+   position: sticky;
+   margin-bottom:30px;
+   font-size:200%;
+   
+}
+#button{
+
+  position:absolute;
+  margin-top: 400px;
+  margin-left:300px;
+  top:100px;
+  text-align:center;
+  padding:5px;
+
+
+}
+.butt{
+  color:white;
+  background-color:crimson;
+  border-radius: 5px;
+
+
+}
+.butt:hover{
+  background-color:rgb(240, 102, 130);
+}
+
+.heart {
+    position: relative;
+    margin-left: 250px;
+    width: 100px;
+    height: 90px;
+    margin-top: 150px;
+    opacity: 50%;
+    cursor: pointer;
+    
+    
+  }
+  .heart{
+    
+    animation-iteration-count: 3;
+    animation-duration: 10s;
+    animation-play-state: initial;
+    position: fixed;
+    margin-left: 250px;
+    animation: 5s linear 0s infinite running myzoom;
+  
+    
+  }
+
+  
+  
+  .heart::before, .heart::after {
+    content: "";
+    position:absolute;
+    top:0;
+    width: 52px;
+    height: 80px;
+    border-radius: 50px 50px 0 0;
+    background: red;
+    
+  }
+  
+  .heart::before {
+    position:absolute;
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  
+  .heart::after {
+    position:absolute;
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+
+
+
+#text{
+    
+    visibility: hidden;
+    
+    position: fixed;
+    left: -2px;
+    top:100px;
+    color: aliceblue;
+    font-family:'Italianno', cursive;
+    margin-top: 50px;
+    margin-left:200px;
+    font-size: 30px;
+    opacity: 1x;
+    animation-duration: 10s;
+    animation-play-state: initial;
+    animation: 5s linear 0s infinite running myzoom1;
+
+    
+    
+  
+    
+
+}
+
+
+
+
+
+@keyframes myzoom{
+  50%{transform: scale(5,5); }
+}
+
+@keyframes myzoom1{
+  50%{transform: scale(2,2); }
+}
